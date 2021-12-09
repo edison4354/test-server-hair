@@ -8,7 +8,8 @@ const ReservationSchema = new Schema({
   dateValue: { type: String, required: true},
   timeValue: { type: String, required: true},
   serviceValue: { type: String, required: true},
-  descValue: { type: String, required: true}
+  descValue: { type: String, required: true},
+  dateCreated: { type: Date, default: Date.now }
 });
 
 // Create model for appointment
