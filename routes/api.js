@@ -21,7 +21,7 @@ router.post('/appointment', (req, res, next) => {
   client.messages
     .create({
       body: 'Hello Edison! This is Hair By Diana, please text YES to confirm your recent booking for 12/31/2021',
-      to: '+19163338146', // Text this number
+      to: '', // Text this number
       from: '+15304530701', // From a valid Twilio number
     })
     .then((message) => console.log(message.sid));
